@@ -1,0 +1,21 @@
+<a href="/">Dashboard</a>
+<a href="/tasks/new">New Tasks</a>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<h1 class="heading">All Tasks </h1>
+
+<% @tasks.each do |task| %>
+  <h3><a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+<p><%= task.description %></p>
+
+<form action="/tasks/<%= task.id %>/edit" method="GET">
+  <input type="hidden" name="_method" value="EDIT">
+  <input id="button" type="submit" value="EDIT">
+</form>
+
+<form action="/tasks/<%= task.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input id="button" type="submit" value="DELETE">
+</form>
+
+<img src="https://localtvwghp.files.wordpress.com/2019/03/gettyimages-140115233.jpg?quality=85&strip=all&w=400&h=225&crop=1">
+<% end %>

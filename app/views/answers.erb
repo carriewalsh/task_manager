@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/style.css" />
+<a href="/">Dashboard</a>
+<h1>Task Manager answers</h1>
+<div>
+  <ol>
+    <li id="answers">Define CRUD:</li>
+      <p>CRUD stands for create, read, update, destroy. In applications like Sinatra, it has to do with data storage. A user must be able to create a database or add new information to an existing database. Beyond that, the user must be able to access that data, or "read" it. Update and delete are pretty straight forward.</p>
+    <li id="answers">Why do we use set method_override: true?</li>
+    <p>From what I can tell, using method_override: true, is important when a name may be the same as an already built in property. The override will allow the name to exist but the correct method will be used.</p>
+    <li id="answers">Explain the difference between value and name in this line:</li>
+    <p>In an input tag, value="" is the initial value for that input. It is what is shown in the box before the user types. The name="" is how that information will be referenced. In this case, the input will be used as the value for task[title].</p>
+    <li id="answers">What are params? Where do they come from?</li>
+    <p>Like from above, params are taken from name="" from an input. The user will be CREATING or READING this data.</p>
+    <li id="answers">Check out your routes. Why do we need two routes each for creating a new Task and editing an existing Task?</li>
+    <p>The GET route for new and edit both route the user to the correct view page. For edit, it also sets the instance variable of @task to the chosen task (based on id). PUT and POST can seem very similar. In this case, POST is used for a task generator - for pages that do not already exist. PUT is used for updating a task that aleady exists - the page already exists.</p>
+  </ol>
+</div>
+
+<img src=https://i.pinimg.com/originals/a7/87/8e/a7878efbff391d5b03438aa0c4c3a752.jpg >

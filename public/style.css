@@ -1,0 +1,53 @@
+body {
+  background-color: navy;
+  background-image: url(https://cache.desktopnexus.com/thumbseg/357/357330-bigthumbnail.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: helvetica;
+  font-weight: 100;
+  color: #FDE090;
+}
+
+li {
+  background-color: #FFD07E;
+  font-size: 20px;
+  margin: 10px;
+  width: 100px;
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 40px;
+  width: 600px
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h3 {
+  background-color: #FFD07E;
+  width: auto;
+  padding-left: 10px;
+  font-size: 25px
+}
+
+#button {
+  background-color: #d0b9c6;
+  font-weight: 500;
+  padding: 5px
+}
+
+form {
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+#answers {
+  font-weight: 100;
+  background-color: transparent;
+  width: 600px
+}
